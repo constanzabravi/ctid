@@ -12842,16 +12842,11 @@ header.masthead .h1 {
 
 /* CAROUSEL */
 
-.carousel
-
-{
-  height: 500px;
-  width: 500px;
+.carousel {
+  max-width: 100%;
 }
 
-.next{
-  color: black;
-}
+
 /* RESPONSIVE AGENDA */
 
 @media only screen and (max-width : 900px) {
