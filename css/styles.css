@@ -12613,6 +12613,7 @@ fieldset:disabled .btn {
 }
 
 html {
+  overflow-x: hidden;
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
 }
