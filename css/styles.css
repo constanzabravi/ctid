@@ -12862,3 +12862,7 @@ header.masthead .h1 {
     height: 100px;
   }
 }
+
+.footerimg {
+  max-width: 50%;
+}
