@@ -245,21 +245,20 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Contactate con nosotoros para más información</h2>
+                    <h2 class="mt-0">Contactate con nosotros para más información</h2>
                     <hr class="divider" />
                     <p class="text-muted mb-5">Llená este formulario</p>
                 </div>
             </div>
+
+
+
+
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formspree.io/f/mkgwgonq"
+                        method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Escribe tu nombre..."
@@ -277,13 +276,6 @@
                             <div class="invalid-feedback" data-sb-feedback="email:email">El e-mail no es válido</div>
                         </div>
                         <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="261 123 456"
-                                data-sb-validations="required" />
-                            <label for="phone">Celular</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">El celular es requerido
-                            </div>
-                        </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text"
@@ -299,10 +291,7 @@
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Formulario listo!</div>
-                                <!-- PARA ACTIVAR EL FORM, HACER CLICK ABAJO O IMPLEMENTAR OTRO MAS FACIL -->
                                 <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                             </div>
                         </div>
                         <!-- Submit error message-->
@@ -318,12 +307,6 @@
                     </form>
                 </div>
             </div>
-            <!-- <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>261 123 2445</div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- Footer-->
