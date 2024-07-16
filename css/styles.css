@@ -3712,7 +3712,7 @@ fieldset:disabled .btn {
   --bs-dropdown-item-padding-y: 0.25rem;
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
-  --bs-dropdown-header-padding-y: 0.5rem;
+  --bs-dropdown-header-padding-y: 0.rem;
   position: absolute;
   z-index: var(--bs-dropdown-zindex);
   display: none;
@@ -4137,12 +4137,13 @@ fieldset:disabled .btn {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-disabled-color: #585e64;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: black;
 }
 
 .nav-link {
@@ -12624,7 +12625,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 1rem 0;
 }
 
 .text-white-75 {
@@ -12742,7 +12743,7 @@ header.masthead {
 
 header.masthead h1,
 header.masthead .h1 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -12754,7 +12755,7 @@ header.masthead .h1 {
   }
 
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   header.masthead h1,
@@ -12837,6 +12838,7 @@ header.masthead .h1 {
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 2;
+  filter: opacity(.5);
 }
 
 /* CAROUSEL */
