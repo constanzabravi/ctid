@@ -4138,6 +4138,7 @@ fieldset:disabled .btn {
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #585e64;
+
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -4154,6 +4155,8 @@ fieldset:disabled .btn {
   color: var(--bs-nav-link-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12863,7 +12866,7 @@ header.masthead .h1 {
 }
 
 .footerimg {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 /* MARGIN */
