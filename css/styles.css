@@ -12879,3 +12879,9 @@ header.masthead .h1 {
 .fondoazul {
   background-color: #12334A;
 }
+
+/* MARGIN BOTON */
+
+.margin {
+  margin-bottom: 10px;
+}
