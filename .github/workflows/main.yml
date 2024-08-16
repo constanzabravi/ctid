@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.caso.com.ar
+        username: ftpctid2024@ctid2024.com
+        password: ${{ secrets.ctid2024 }}
+        server-dir: /
