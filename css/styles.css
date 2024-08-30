@@ -153,6 +153,7 @@ h2,
 }
 
 @media (max-width: 600px) {
+
   h2,
   .h2 {
     font-size: 1.2rem !important;
@@ -649,10 +650,48 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+/* IMG SPONSOR */
+
+/* Ajuste para las columnas de 5 en lugar de 3 */
+.custom-col {
+  flex: 0 0 20%; /* Cada columna ocupa 20% del ancho total */
+  max-width: 20%;
+  padding: 10px; /* Ajusta el padding si es necesario */
 }
+
+/* Reduce el tamaño de las imágenes */
+
+.img-sponsor {
+  max-width: 100%; /* Mantén el ancho máximo al 100% del contenedor */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Reduce los márgenes */
+.margin {
+  margin: 10px 0; /* Ajusta este valor según lo que necesites */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  /* Ajusta el tamaño de las columnas para que ocupen menos espacio */
+  .custom-col {
+      flex: 0 0 50%; /* Cada columna ocupa el 50% del ancho de la fila */
+      max-width: 50%;
+      padding: 5px; /* Reduce el padding para que las columnas no se vean tan grandes */
+  }
+
+  /* Reduce el tamaño de las imágenes en móviles */
+  .img-sponsor {
+      max-width: 80%; /* Reduce el tamaño máximo de las imágenes al 80% del contenedor */
+      height: auto;
+  }
+}
+
+
+/* ANOTHER  */
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -6634,13 +6673,6 @@ fieldset:disabled .btn {
   color: var(--bs-popover-body-color);
 }
 
-.carousel-img {
-  width: 100%;
-  max-width: 150px; /* Ajusta este tamaño según la necesidad */
-  height: 100px; /* Tamaño fijo para evitar cambios de altura */
-  object-fit: contain; /* Mantiene la proporción de las imágenes */
-  margin: auto; /* Centra las imágenes */
-}
 
 .carousel .carousel-inner {
   width: 100%;
@@ -6651,13 +6683,30 @@ fieldset:disabled .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px; /* Altura mínima para asegurar consistencia en el espacio */
+  min-height: 150px;
+  /* Altura mínima para asegurar consistencia en el espacio */
 }
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
   }
+}
+
+/* Asegurar que todas las imágenes dentro del carrusel tengan el mismo tamaño */
+.carousel img {
+  width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+  height: auto; /* Mantén la proporción de la imagen */
+  max-height: 150px; /* Ajusta esta altura máxima según sea necesario */
+  object-fit: contain; /* Asegura que la imagen mantenga sus proporciones dentro del contenedor */
+}
+
+.carousel .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  /* Altura mínima para asegurar consistencia en el espacio */
 }
 
 .carousel-item.active,
@@ -12877,6 +12926,37 @@ header.masthead .h1 {
 /* footer img */
 
 .footerimg {
-  width: 200px ;
+  width: 200px;
   height: 200px;
+}
+
+.carousel-img {
+  max-width: 100px; /* Tamaño de imagen ajustado */
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-img {
+  max-width: 100px; /* Tamaño de imagen ajustado */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-img {
+      max-width: 120px; /* Tamaño de imagen más grande en móviles */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-img {
+      max-width: 150px; /* Tamaño de imagen aún mayor en pantallas más pequeñas */
+  }
+
+  /* Ajusta el contenedor para centrarse en dispositivos pequeños */
+  .carousel-item {
+      display: flex;
+      justify-content: center;
+  }
 }
