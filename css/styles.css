@@ -12960,3 +12960,11 @@ header.masthead .h1 {
       justify-content: center;
   }
 }
+
+#contact img {
+    max-width: 100%;      /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;         /* Mantén la proporción original de la imagen */
+    max-height: 200px;    /* Puedes ajustar la altura máxima según lo que necesites */
+    object-fit: contain;  /* Asegura que la imagen mantenga su proporción dentro del espacio */
+    margin: 0 auto;       /* Centra la imagen horizontalmente */
+}
