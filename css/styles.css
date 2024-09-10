@@ -12962,9 +12962,22 @@ header.masthead .h1 {
 }
 
 #contact img {
-    max-width: 100%;      /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto;         /* Mantén la proporción original de la imagen */
-    max-height: 200px;    /* Puedes ajustar la altura máxima según lo que necesites */
-    object-fit: contain;  /* Asegura que la imagen mantenga su proporción dentro del espacio */
-    margin: 0 auto;       /* Centra la imagen horizontalmente */
+  width: 200%;           /* Ajusta el ancho de la imagen al 100% del contenedor */
+  max-width: 1000px;      /* Ancho máximo de la imagen (ajusta este valor para hacerla más grande) */
+  height: auto;          /* Mantiene la proporción original de la imagen */
+  margin: 0 auto;        /* Centra la imagen dentro del contenedor */
+}
+
+@media (max-width: 768px) {
+  #contact img {
+      max-width: 600px;  /* Ajusta el tamaño máximo en dispositivos móviles */
+  }
+}
+
+/* Ajuste para pantallas muy pequeñas (por debajo de 480px) */
+@media (max-width: 480px) {
+  #contact img {
+      width: 100%;      /* La imagen ocupará el 60% del ancho del contenedor en pantallas muy pequeñas */
+      max-width: 350px;
+  }
 }
